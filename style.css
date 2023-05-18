@@ -198,6 +198,9 @@ footer .footer-logo {
   border: none;
   background-color: transparent;
 }
+#desktop{
+  background-color: #fff;
+}
 
 @media (max-width: 600px) {
   .menu__item {
