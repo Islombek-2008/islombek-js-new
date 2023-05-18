@@ -18,6 +18,7 @@ dark.addEventListener("click", function () {
   body.style.color = "white";
   dark.style.display = "none";
   light.style.display = "block";
+  light.style.color = "white"
   desktop.style.background = "black";
   dark.style.border = "none";
   dark.style.background = "white";
