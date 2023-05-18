@@ -180,7 +180,7 @@ footer .footer-logo {
     border-top: 1px solid #51d5c2;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    background: #fff;
+    padding-bottom: 10px;
   }
   .menu::after {
     height: 5%;
@@ -192,5 +192,22 @@ footer .footer-logo {
   }
   img {
     width: 350px;
+  }
+}
+.theme {
+  border: none;
+  background-color: transparent;
+}
+
+@media (max-width: 600px) {
+  .menu__item {
+    font-size: 25px;
+  }
+  .menu__item::before {
+    display: none;
+  }
+  .menu__item.active::after {
+    transform: translate3d(0, 5px, 0) scaleX(1);
+    transition: transform var(--duration) var(--cubic);
   }
 }

@@ -11,12 +11,16 @@ let htmldiv = document.getElementById("html-css");
 let javaScriptdiv = document.getElementById("javaScriptdiv");
 let vuediv = document.getElementById("vuediv");
 let githubdiv = document.getElementById("githubdiv");
+let desktop = document.getElementById("desktop");
 
 dark.addEventListener("click", function () {
   body.style.background = "black";
   body.style.color = "white";
   dark.style.display = "none";
   light.style.display = "block";
+  desktop.style.background = "black";
+  dark.style.border = "none";
+  dark.style.background = "white";
 });
 
 light.addEventListener("click", function () {
@@ -24,6 +28,10 @@ light.addEventListener("click", function () {
   body.style.color = "black";
   dark.style.display = "block";
   light.style.display = "none";
+  desktop.style.background = "white";
+  light.style.border = "none";
+  light.style.background = "black";
+  light.style.color = "white";
 });
 
 allbtn.addEventListener("click", function () {
