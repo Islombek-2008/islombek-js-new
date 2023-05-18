@@ -1,12 +1,30 @@
+let body = document.getElementById("body");
+
 let allbtn = document.getElementById("all");
 let htmlbtn = document.getElementById("html");
 let javaScriptbtn = document.getElementById("javaScript");
 let vuebtn = document.getElementById("VueJs");
 let githubbtn = document.getElementById("GitHub");
+let dark = document.getElementById("dark");
+let light = document.getElementById("light");
 let htmldiv = document.getElementById("html-css");
 let javaScriptdiv = document.getElementById("javaScriptdiv");
 let vuediv = document.getElementById("vuediv");
 let githubdiv = document.getElementById("githubdiv");
+
+dark.addEventListener("click", function () {
+  body.style.background = "black";
+  body.style.color = "white";
+  dark.style.display = "none";
+  light.style.display = "block";
+});
+
+light.addEventListener("click", function () {
+  body.style.background = "white";
+  body.style.color = "black";
+  dark.style.display = "block";
+  light.style.display = "none";
+});
 
 allbtn.addEventListener("click", function () {
   htmldiv.style.display = "block";

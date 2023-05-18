@@ -15,12 +15,17 @@ body {
   margin: 0;
   height: 100vh;
   font-family: "Nunito", sans-serif;
+  padding-bottom: 500px;
+}
+#light {
+  display: none;
 }
 nav {
   display: flex;
   justify-content: space-between;
   padding: 25px 70px;
   align-items: center;
+  position: relative;
 }
 nav a {
   text-decoration: none;
@@ -112,10 +117,12 @@ nav a {
   transform: translate3d(6.3em, 0, 0) scaleX(1);
   transition: transform var(--duration) var(--cubic);
 }
+
 .menu__text.active {
   transform: translate3d(0, 0, 0);
   transition: transform calc(var(--duration) / 1.5);
 }
+
 .profil {
   display: flex;
   flex-direction: column;
@@ -123,4 +130,67 @@ nav a {
   width: 100%;
   gap: 25px;
   padding: 25px 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 70px;
+  border-top: 0.5px solid rgb(103, 96, 96);
+  align-items: center;
+}
+footer .footer-logo {
+  font-size: 35px;
+  text-decoration: none;
+  font-size: 35px;
+  color: rgb(127, 199, 191);
+  display: flex;
+  margin-right: 50px;
+}
+.footer-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+}
+.footer-icons a {
+  color: #8a8a87;
+  font-size: 35px;
+}
+.footer-icons a:hover {
+  color: #51d5c2;
+  transition: all 0.3s;
+  font-size: 37px;
+}
+
+@media (max-width: 950px) {
+  footer {
+    padding-bottom: 100px;
+  }
+  .menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+    -webkit-tap-highlight-color: transparent;
+    border-top: 1px solid #51d5c2;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background: #fff;
+  }
+  .menu::after {
+    height: 5%;
+    width: 50%;
+    bottom: 10%;
+    content: " ";
+    position: absolute;
+    border-radius: 1em;
+  }
+  img {
+    width: 350px;
+  }
 }

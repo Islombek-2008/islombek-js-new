@@ -14,10 +14,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body id="body">
     <nav>
       <a href="#"><i class="fab fa-angellist"></i> Islombek</a>
-      <menu class="menu">
+      <menu class="menu" id="desktop">
         <button class="menu__item active" id="all">
           <div class="menu__icon">
             <i class="fas fa-chart-bar" style="font-size: 35px"></i>
@@ -53,31 +53,57 @@
           <strong class="menu__text">GitHub</strong>
         </button>
       </menu>
+
+      <!-- mobilni menu -->
+
+      <button id="dark">
+        <i class="fas fa-bars" style="font-size: 30px"></i>
+      </button>
+      <button id="light">
+        <i class="fas fa-bars" style="font-size: 30px"></i>
+      </button>
     </nav>
-    <div
-      class="profil"
-    >
+    <div class="profil">
       <div id="html-css">
-        <a href="#">
+        <h3>Islombek HTML CSS BOTSTRAP vazifasi</h3>
+        <a href="https://islombek-norboyev.netlify.app/">
           <img src="./img/html-css.jpg" alt="html" />
         </a>
       </div>
       <div id="javaScriptdiv">
+        <h3>Islombekning javaScript vazifasi</h3>
         <a href="#">
           <img src="./img/js.jpg" alt="js" />
         </a>
       </div>
       <div id="vuediv">
+        <h3>Islombekning vueJs vazifasi</h3>
         <a href="#">
           <img src="./img/vueJS.jpg" alt="vuejs" />
         </a>
       </div>
       <div id="githubdiv">
+        <h3>Islombekning GitHubi</h3>
         <a href="#">
           <img src="./img/gitHub.jpg" alt="github" />
         </a>
       </div>
     </div>
+
+    <footer>
+      <a href="#" class="footer-logo"
+        ><i class="fab fa-angellist" style="font-size: 35px"></i> Islombek</a
+      >
+
+      <div class="footer-icons">
+        <a href="#"><i class="fab fa-facebook-square"> </i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-telegram"></i></a>
+        <a href="#"><i class="fab fa-youtube-square"></i></a>
+        <a href="#"><i class="fab fa-github-square"></i></a>
+        <a href="#"><i class="fab fa-git-alt"></i></a>
+      </div>
+    </footer>
     <script src="./js/main.js"></script>
     <script src="./js/app.js"></script>
   </body>
