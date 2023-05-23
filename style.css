@@ -197,8 +197,9 @@ footer .footer-logo {
 .theme {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
-#desktop{
+#desktop {
   background-color: #fff;
 }
 
